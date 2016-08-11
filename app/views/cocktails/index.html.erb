@@ -17,29 +17,36 @@
 
 <p id="notice"><%= notice %></p>
 <div class="text-center">
+
   <h1>Cocktails</h1>
-<div class="product">
-  <table class="text-center">
-    <thead >
-      <tr>
-        <th>Name</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
+  <div class="product">
+    <table class="text-center">
+      <thead >
+        <tr>
+          <th class="text-center">Name</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-    <tbody >
-      <% @cocktails.each do |cocktail| %>
-      <tr>
-        <td ><%= cocktail.name %></td>
-        <td><%= link_to 'Show', cocktail, class: "btn btn-primary" %></td>
-
-        <td><%= link_to 'Destroy', cocktail, class: "btn btn-primary",method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <tbody >
+        <% @cocktails.each do |cocktail| %>
+        <tr>
 
 
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
+          <div class="row">
+
+            <td><div class="col-md-4"><%= cocktail.name %></div></td>
+
+            <td><div class="col-md-4"><%= link_to 'Show', cocktail, class: "btn btn-primary" %></div></td>
+
+           <td> <div class="col-md-4"> <%= link_to 'Destroy', cocktail, class: "btn btn-primary",method: :delete, data: { confirm: 'Are you sure?' } %></div></td>
+
+          </div>
+
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
 
   <br>
