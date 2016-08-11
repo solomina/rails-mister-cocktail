@@ -1,7 +1,24 @@
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://static.pexels.com/photos/97135/pexels-photo-97135.jpeg');">
+  <div class="banner-content">
+    <h1>Create your own cocktail</h1>
+    <p></p>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 <p id="notice"><%= notice %></p>
 <div class="text-center">
   <h1>Cocktails</h1>
-
+<div class="product">
   <table class="text-center">
     <thead >
       <tr>
@@ -14,17 +31,18 @@
       <% @cocktails.each do |cocktail| %>
       <tr>
         <td ><%= cocktail.name %></td>
-        <td><%= link_to 'Show', cocktail %></td>
+        <td><%= link_to 'Show', cocktail, class: "btn btn-primary" %></td>
 
-        <td><%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', cocktail, class: "btn btn-primary",method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
 
       </tr>
       <% end %>
     </tbody>
   </table>
+  </div>
 
   <br>
 
-  <%= link_to 'New cocktail', new_cocktail_path %>
+  <%= link_to 'New cocktail', new_cocktail_path, class: "btn btn-primary" %>
 </div>
