@@ -12,3 +12,12 @@ Ingredient.destroy_all
 puts "making ingredients"
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "mint")
+Ingredient.create(name: "vodka")
+Ingredient.create(name: "wine")
+Ingredient.create(name: "cava")
+Ingredient.create(name: "milk")
+Ingredient.create(name: "cinnamon")
+Ingredient.create(name: "coffee")
+Ingredient.create(name: "becherovka")
+Ingredient.create(name: "ruhm")
+Ingredient.create(name: "orange juce")

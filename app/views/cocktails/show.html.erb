@@ -1,12 +1,16 @@
 <p id="notice"><%= notice %></p>
 <div class="text-center">
-<%= @cocktail.name %>
+<h3>Here is your cocktail : </br><h2> <%= @cocktail.name %></h2></h3>
 
 
+
+<ul style="list-style-type:none">
 <% @cocktail.doses.each do |dose| %>
 
-<%= dose.description  %>
+<li>
 
+<%= dose.description  %> , <%= dose.ingredient.name %>
+</li>
 
 <% end %>
 
@@ -15,6 +19,8 @@
 <%= f.input :ingredient_id, as: :select, collection: @ingredients %>
 <%= f.submit class: "btn btn-primary" %>
 <% end %>
+
+</ul>
 
 
 

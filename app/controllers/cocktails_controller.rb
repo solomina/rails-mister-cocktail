@@ -35,12 +35,10 @@ class CocktailsController < ApplicationController
   end
 
 
-    def destroy
-    @dose.destroy
-    respond_to do |format|
-      format.html { redirect_to doses_url, notice: 'was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+  def destroy
+    @cocktail.destroy
+    redirect_to cocktail_path
+
   end
   # POST /cocktails
   # POST /cocktails.json
@@ -56,5 +54,5 @@ class CocktailsController < ApplicationController
       params.require(:cocktail).permit(:name)
     end
 
-end
+  end
 
