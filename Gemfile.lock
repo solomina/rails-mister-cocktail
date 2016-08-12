@@ -39,6 +39,9 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.1)
+    attachinary (1.3.1)
+      cloudinary (~> 1.1.0)
+      rails (>= 3.2)
     autoprefixer-rails (6.4.0.1)
       execjs
     aws_cf_signer (0.1.3)
@@ -90,6 +93,10 @@ GEM
     jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
+    jquery-fileupload-rails (0.4.7)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
+      sass (>= 3.2)
     jquery-rails (4.1.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -216,6 +223,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  attachinary (= 1.3.1)
   autoprefixer-rails
   better_errors
   binding_of_caller
@@ -227,6 +235,7 @@ DEPENDENCIES
   figaro
   font-awesome-sass
   jbuilder (~> 2.5)
+  jquery-fileupload-rails
   jquery-rails
   listen (~> 3.0.5)
   pg (~> 0.18)
