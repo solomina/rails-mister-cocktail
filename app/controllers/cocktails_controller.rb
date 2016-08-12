@@ -1,4 +1,5 @@
 class CocktailsController < ApplicationController
+  include ActionController::MimeResponds
   before_action :set_cocktail, only: [:show, :edit, :update, :destroy]
 
   # GET /cocktails
